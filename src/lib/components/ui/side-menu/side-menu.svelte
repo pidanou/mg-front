@@ -27,7 +27,6 @@
 		border-radius: 5px 0px 0px 5px;
 		background: #fff;
 		transition: width 0.3s ease-in-out;
-		border: 1px solid #eee;
 	}
 
 	.white:hover {

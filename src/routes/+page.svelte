@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Piano from '$lib/components/ui/side-menu/side-menu.svelte';
 	import Musico from '$lib/components/sections/musico.svelte';
+	import Cours from '$lib/components/sections/cours.svelte';
+	import Contact from '$lib/components/sections/contact.svelte';
 
 	let y: number | undefined = $state();
 	let scrollContainer: any;
@@ -33,36 +34,36 @@
 	let page = $derived(Math.round(y ? y / vh : 0));
 </script>
 
-<div class="absolute right-0 m-0 flex h-screen flex-col items-center justify-center">
-	<Piano active={page} {onclick} />
-</div>
 <div
 	bind:this={scrollContainer}
 	{onscroll}
-	class="h-screen snap-y snap-mandatory overflow-y-scroll"
+	class="overflow-y-scroll lg:h-screen lg:snap-y lg:snap-mandatory"
 >
 	<section
 		id="0"
-		class="flex h-screen snap-mandatory snap-center items-center justify-center bg-blue-100"
+		class="flex snap-mandatory snap-center items-center justify-center bg-blue-100 lg:h-screen"
 	>
 		{page}
 	</section>
 	<section
 		id="1"
-		class="flex h-screen snap-mandatory snap-center items-center justify-center bg-red-100"
+		class="flex snap-mandatory snap-center items-center justify-center bg-red-100 lg:h-screen"
 	>
 		{page}
 	</section>
 	<section
 		id="2"
-		class="flex h-screen snap-mandatory snap-center items-center justify-center bg-green-100"
+		class="flex snap-mandatory snap-center items-center justify-center bg-green-100 lg:h-screen"
 	>
 		<Musico />
 	</section>
 	<section
 		id="3"
-		class="flex h-screen snap-mandatory snap-center items-center justify-center bg-pink-100"
+		class="flex snap-mandatory snap-center items-center justify-center bg-pink-100 lg:h-screen"
 	>
-		{page}
+		<Cours />
+	</section>
+	<section id="4" class="flex snap-mandatory snap-center items-center justify-center lg:h-screen">
+		<Contact />
 	</section>
 </div>

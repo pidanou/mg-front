@@ -4,22 +4,16 @@
 
 	const content = [
 		{
-			title: 'Pourquoi utiliser la musique ?',
-			description:
-				'Jouer et écouter de la musique stimule la motivation, la mémoire, l’attention, les compétences sociales, la motricité, les émotions… Elle peut également réduire les tensions musculaires, la fréquence cardiaque, la pression artérielle.'
+			title: 'Méthodologie',
+			description: `Grâce à ma formation en musicothérapie, je sais m'adapter aux besoins uniques de chaque élève. Lors de nos cours, nous travaillons généralement sur un morceau choisi par l'élève. Si nécessaire, j'écris moi-même les partitions afin qu'elles correspondent à son niveau. Nous réalisons également des exercices et des morceaux ciblés en fonction des besoins spécifiques de l'élève. Je m'assure que l'apprentissage soit agréable, en mettant l'accent sur le plaisir musical et le confort de jeu. En plus de l'apprentissage des morceaux, nous abordons également les notions de solfège, d'interprétation, et d'improvisation.`
 		},
 		{
-			title: 'Les outils du musicothérapeute',
+			title: 'Eveil musical',
 			description:
 				'J’utilise trois outils en musicothérapie, la musicothérapie active, la musicothérapie réceptive et la détentes psychomusicale. <br><br> En musicothérapie active, nous utilisons des instruments faciles d’utilisation ne nécessitant aucune compétence musicale. <br><br> En musicothérapie réceptive, nous écoutons de la musique en lien avec vos objectifs, suivi d’un espace d’échange. <br><br>En détente psychomusicale, vous pouvez vous laisser porter par la musique que je vous joue en direct. '
 		},
 		{
-			title: "Cadre d'intervention",
-			description:
-				'Chaque prise en charge débute par un bilan en musicothérapie en trois étapes ( un entretien, un bilan en musicothérapie active et un bilan en musicothérapie réceptive)  afin d’établir ensemble un projet personnalisé adapté à vos besoins. <br><br> La musicothérapie se pratique en séance de groupe ou en individuel durant en moyenne 4/3 d’heures adaptable en fonction de chacun. <br><br> Les séances ont lieu aux alentours de Sallanches (74).'
-		},
-		{
-			title: 'Liens utiles',
+			title: 'Solfège',
 			description:
 				'Chaque prise en charge débute par un bilan en musicothérapie en trois étapes ( un entretien, un bilan en musicothérapie active et un bilan en musicothérapie réceptive)  afin d’établir ensemble un projet personnalisé adapté à vos besoins. <br><br> La musicothérapie se pratique en séance de groupe ou en individuel durant en moyenne 4/3 d’heures adaptable en fonction de chacun. <br><br> Les séances ont lieu aux alentours de Sallanches (74).'
 		}
@@ -81,16 +75,19 @@
 	];
 </script>
 
-<div class="flex w-screen flex-col gap-6 lg:h-screen lg:flex-row lg:p-20">
-	<div class="flex flex-col items-start justify-start p-10 lg:h-full lg:w-1/2">
-		<div class="text-5xl font-bold">
-			La <br />
-			<span class="font-black text-[#de7466] hover:italic hover:underline">musicothérapie</span>,<br
-			/>
-			une démarche de soin par la musique <br />
-			<span class="font-black text-[#de7466] hover:italic hover:underline">pour tous</span>
+<div class="flex w-screen flex-col-reverse gap-6 lg:h-screen lg:flex-row lg:p-20">
+	<div class="relative h-full lg:w-1/2">
+		<div class="flex h-full w-full p-10">
+			<AnimatedTooltip items={people} />
 		</div>
-		<Accordion.Root type="single" class="mt-16 w-full">
+	</div>
+	<div class="flex flex-col items-start justify-start p-10 lg:h-full lg:w-1/2 lg:p-20">
+		<div class="text-5xl font-bold">
+			L'apprentissage du piano
+			<span class="font-black text-[#6d83d3] hover:italic hover:underline"><br />adapté</span>
+			<br />à vos capacités
+		</div>
+		<Accordion.Root type="single" class="mt-28 w-full">
 			{#each content as item, index (item.title + index)}
 				<Accordion.Item class="border-none" value={index.toFixed()}>
 					<Accordion.Trigger class="text-3xl font-extrabold">{item.title}</Accordion.Trigger>
@@ -98,10 +95,5 @@
 				</Accordion.Item>
 			{/each}
 		</Accordion.Root>
-	</div>
-	<div class="relative h-full lg:w-1/2">
-		<div class="flex h-full w-full p-10">
-			<AnimatedTooltip items={people} />
-		</div>
 	</div>
 </div>
