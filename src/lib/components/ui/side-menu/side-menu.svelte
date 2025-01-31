@@ -23,7 +23,7 @@
 <div class="flex h-full flex-col items-end justify-between gap-6 p-10">
 	<div></div>
 	<div class="flex flex-col gap-6 max-lg:hidden">
-		{#each [0, 1, 2, 3, 4] as index}
+		{#each [0, 1, 2, 3] as index}
 			<button onclick={() => onclick(index)} class={cn('z-100 h-min w-min', className)}>
 				<Note
 					transition={draw}

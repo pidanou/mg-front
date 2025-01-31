@@ -54,12 +54,6 @@
 		<Home />
 	</section>
 	<section
-		id="1"
-		class="flex snap-mandatory snap-center items-center justify-center bg-red-100 lg:h-screen"
-	>
-		{page}
-	</section>
-	<section
 		id="2"
 		class="flex snap-mandatory snap-center items-center justify-center bg-green-100 lg:h-screen"
 	>

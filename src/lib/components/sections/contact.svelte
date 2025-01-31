@@ -80,7 +80,7 @@
 								typingMail = true;
 							}}
 							onblur={() => {
-								mailPlaceHolder = 'mathilde.guer.ei@gmail.com';
+								mailPlaceHolder = 'mathilde.guer.mt@gmail.com';
 								typingMail = false;
 							}}
 						/>

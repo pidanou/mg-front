@@ -61,22 +61,24 @@
 
 <div class="flex w-screen flex-col gap-6 lg:h-screen lg:flex-row-reverse lg:p-20">
 	<div class="flex flex-col items-start justify-start p-10 lg:h-full lg:w-1/2 lg:p-20">
-		<div class="text-5xl font-bold">
+		<div class="text-6xl font-bold">
 			L'apprentissage du piano
-			<span class="font-black text-[#6d83d3] hover:italic hover:underline"><br />adapté</span>
+			<span class="font-black text-[#6d83d3] hover:italic hover:underline">adapté</span>
 			à vos capacités
 		</div>
-		<Accordion.Root type="single" class="mt-28 w-full">
+		<Accordion.Root type="single" class="mt-10 w-full lg:mt-36">
 			{#each content as item, index (item.title + index)}
 				<Accordion.Item class="border-none" value={index.toFixed()}>
 					<Accordion.Trigger class="text-3xl font-extrabold">{item.title}</Accordion.Trigger>
-					<Accordion.Content class="text-sm">{@html item.description}</Accordion.Content>
+					<Accordion.Content class="text-lg font-semibold"
+						>{@html item.description}</Accordion.Content
+					>
 				</Accordion.Item>
 			{/each}
 		</Accordion.Root>
 	</div>
 	<div class="relative h-full lg:w-1/2">
-		<div class="flex h-full w-full p-20">
+		<div class="flex h-full w-full px-20 pb-10 lg:p-20">
 			<AnimatedTooltip items={people} />
 		</div>
 	</div>

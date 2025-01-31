@@ -19,7 +19,7 @@
 		{
 			title: 'Les outils du musicothérapeute',
 			description:
-				'J’utilise trois outils en musicothérapie, la musicothérapie active, la musicothérapie réceptive et la détentes psychomusicale. <br><br> En musicothérapie active, nous utilisons des instruments faciles d’utilisation ne nécessitant aucune compétence musicale. <br><br> En musicothérapie réceptive, nous écoutons de la musique en lien avec vos objectifs, suivi d’un espace d’échange. <br><br>En détente psychomusicale, vous pouvez vous laisser porter par la musique que je vous joue en direct. '
+				'J’utilise trois outils en musicothérapie, la musicothérapie active, la musicothérapie réceptive et la détentes psychomusicale. <br><br> 🎹 &nbsp En musicothérapie active, nous utilisons des instruments faciles d’utilisation ne nécessitant aucune compétence musicale. <br> 👂🏼 &nbsp En musicothérapie réceptive, nous écoutons de la musique en lien avec vos objectifs, suivi d’un espace d’échange. <br>🧘🏽‍♀️ &nbsp En détente psychomusicale, vous pouvez vous laisser porter par la musique que je vous joue en direct. '
 		},
 		{
 			title: "Cadre d'intervention",
@@ -97,7 +97,7 @@
 
 <div class="flex w-screen flex-col gap-6 lg:h-screen lg:flex-row lg:p-20">
 	<div class="flex flex-col items-start justify-start p-10 lg:h-full lg:w-1/2 lg:p-20">
-		<div class="text-5xl font-bold">
+		<div class="text-4xl font-bold lg:text-5xl">
 			La
 			<span class="font-black text-[#de7466] hover:italic hover:underline">musicothérapie</span>,<br
 			/>
@@ -107,8 +107,10 @@
 		<Accordion.Root type="single" class="mt-16 w-full">
 			{#each content as item, index (item.title + index)}
 				<Accordion.Item class="border-none" value={index.toFixed()}>
-					<Accordion.Trigger class="text-3xl font-extrabold">{item.title}</Accordion.Trigger>
-					<Accordion.Content class="text-sm">{@html item.description}</Accordion.Content>
+					<Accordion.Trigger class="text-xl font-extrabold">{item.title}</Accordion.Trigger>
+					<Accordion.Content class="text-lg font-semibold"
+						>{@html item.description}</Accordion.Content
+					>
 				</Accordion.Item>
 			{/each}
 		</Accordion.Root>
