@@ -34,6 +34,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"flubber": "^0.4.2",
 		"svelte-motion": "^0.12.2"
 	}
 }

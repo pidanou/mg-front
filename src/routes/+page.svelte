@@ -3,6 +3,10 @@
 	import Musico from '$lib/components/sections/musico.svelte';
 	import Cours from '$lib/components/sections/cours.svelte';
 	import Contact from '$lib/components/sections/contact.svelte';
+	import Home from '$lib/components/sections/home.svelte';
+	import SideMenu from '$lib/components/ui/side-menu/side-menu.svelte';
+	import Button from '$lib/components/ui/button/button.svelte';
+	import { VolumeOff, Volume2 } from 'lucide-svelte/icons';
 
 	let y: number | undefined = $state();
 	let scrollContainer: any;
@@ -34,6 +38,10 @@
 	let page = $derived(Math.round(y ? y / vh : 0));
 </script>
 
+<div class="fixed right-0 z-50 flex h-screen flex-col justify-center">
+	<SideMenu class="" active={page} {onclick} />
+</div>
+
 <div
 	bind:this={scrollContainer}
 	{onscroll}
@@ -43,7 +51,7 @@
 		id="0"
 		class="flex snap-mandatory snap-center items-center justify-center bg-blue-100 lg:h-screen"
 	>
-		{page}
+		<Home />
 	</section>
 	<section
 		id="1"

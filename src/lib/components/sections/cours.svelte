@@ -75,12 +75,7 @@
 	];
 </script>
 
-<div class="flex w-screen flex-col-reverse gap-6 lg:h-screen lg:flex-row lg:p-20">
-	<div class="relative h-full lg:w-1/2">
-		<div class="flex h-full w-full p-10">
-			<AnimatedTooltip items={people} />
-		</div>
-	</div>
+<div class="flex w-screen flex-col gap-6 lg:h-screen lg:flex-row-reverse lg:p-20">
 	<div class="flex flex-col items-start justify-start p-10 lg:h-full lg:w-1/2 lg:p-20">
 		<div class="text-5xl font-bold">
 			L'apprentissage du piano
@@ -95,5 +90,10 @@
 				</Accordion.Item>
 			{/each}
 		</Accordion.Root>
+	</div>
+	<div class="relative h-full lg:w-1/2">
+		<div class="flex h-full w-full p-10">
+			<AnimatedTooltip items={people} />
+		</div>
 	</div>
 </div>

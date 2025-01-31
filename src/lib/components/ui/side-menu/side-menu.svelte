@@ -1,59 +1,45 @@
 <script lang="ts">
-	let { active, onclick }: { active: number; onclick: Function } = $props();
+	import Note from '$lib/components/ui/note/note.svelte';
+	import { draw } from 'svelte/transition';
+	import { cn } from '$lib/utils/cn';
+	import Button from '$lib/components/ui/button/button.svelte';
+	import { VolumeOff, Volume2 } from 'lucide-svelte/icons';
+	import { sound } from '$lib/states/sound.svelte';
+
+	let {
+		active,
+		onclick,
+		class: className
+	}: { active: number; onclick: any; class: string } = $props();
+
+	function toggleMute() {
+		sound.muted = !sound.muted;
+		if (sound.video) {
+			sound.video.muted = sound.muted;
+		}
+	}
 </script>
 
-<div class="flex flex-col items-end font-bold">
-	<button onclick={() => onclick('0')} class="white fa {active === 0 ? 'wide' : ''}">Accueil</button
-	>
-	<div class="black as"></div>
-	<button onclick={() => onclick('1')} class="white sol {active === 1 ? 'wide' : ''}"
-		>A propos de moi</button
-	>
-	<div class="black gs"></div>
-	<button onclick={() => onclick('2')} class="white la {active === 2 ? 'wide' : ''}"
-		>Musicothérapie</button
-	>
-	<div class="black fs"></div>
-	<button onclick={() => onclick('3')} class="white si {active === 3 ? 'wide' : ''}"
-		>Cours de piano</button
-	>
+<div class="flex h-full flex-col items-end justify-between gap-6 p-10">
+	<div></div>
+	<div class="flex flex-col gap-6 max-lg:hidden">
+		{#each [0, 1, 2, 3, 4] as index}
+			<button onclick={() => onclick(index)} class={cn('z-100 h-min w-min', className)}>
+				<Note
+					transition={draw}
+					active={active === index}
+					duration={500}
+					size={30}
+					class={active === index ? 'animate-wiggle' : ''}
+				/>
+			</button>
+		{/each}
+	</div>
+	<Button onclick={toggleMute} class="= rounded-full" size="icon">
+		{#if !sound.muted}
+			<Volume2 />
+		{:else}
+			<VolumeOff />
+		{/if}
+	</Button>
 </div>
-
-<style>
-	.white {
-		height: 4em;
-		width: 10em;
-		z-index: 1;
-		border-radius: 5px 0px 0px 5px;
-		background: #fff;
-		transition: width 0.3s ease-in-out;
-	}
-
-	.white:hover {
-		cursor: pointer;
-		width: 12em;
-	}
-
-	.black {
-		height: 2em;
-		width: 2em;
-		margin: -1em 0 0 0;
-		z-index: 2;
-		border-radius: 5px 0 0 5px;
-		background: #555555;
-	}
-
-	.fa,
-	.sol,
-	.la,
-	.si {
-		margin: -1em 0 0 0;
-	}
-
-	.wide {
-		width: 14em;
-	}
-	.wide:hover {
-		width: 14em;
-	}
-</style>

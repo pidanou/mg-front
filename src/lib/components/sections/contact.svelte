@@ -44,11 +44,12 @@
 					class="flex w-full grow flex-col items-start justify-start gap-6 lg:flex-row lg:gap-20"
 				>
 					<div class="flex w-full flex-col gap-1.5">
-						<Label class={cn('text-2xl font-semibold', typingName ? 'text-[#74a49d]' : '')}
+						<Label
+							class={cn('text-lg font-semibold lg:text-2xl', typingName ? 'text-[#74a49d]' : '')}
 							>Nom</Label
 						>
 						<Input
-							class="focus:ring-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-2xl placeholder:text-2xl focus:border-[#74a49d]"
+							class="focus:ring-none placeholder:lg rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm focus:border-[#74a49d] lg:text-2xl lg:placeholder:text-2xl"
 							placeholder={namePlaceHolder}
 							type="text"
 							name="name"
@@ -64,11 +65,12 @@
 						/>
 					</div>
 					<div class="flex w-full flex-col gap-1.5">
-						<Label class={cn('text-2xl font-semibold', typingMail ? 'text-[#74a49d]' : '')}
+						<Label
+							class={cn('text-lg font-semibold lg:text-2xl', typingMail ? 'text-[#74a49d]' : '')}
 							>Email</Label
 						>
 						<Input
-							class="focus:ring-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-2xl placeholder:text-2xl focus:border-[#74a49d]"
+							class="focus:ring-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] lg:text-2xl lg:placeholder:text-2xl"
 							placeholder={mailPlaceHolder}
 							type="email"
 							name="email"
@@ -85,15 +87,15 @@
 					</div>
 				</div>
 				<div class="flex w-full flex-col gap-1.5 text-2xl">
-					<Label class={cn('text-2xl font-semibold', typingMessage ? 'text-[#74a49d]' : '')}
+					<Label
+						class={cn('text-lg font-semibold lg:text-2xl', typingMessage ? 'text-[#74a49d]' : '')}
 						>Message</Label
 					>
 					<Textarea
-						class="focus:ring-none resize-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-2xl placeholder:text-2xl focus:border-[#74a49d]"
+						class="focus:ring-none rows-3 lg:rows-2 resize-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] lg:text-2xl lg:placeholder:text-2xl"
 						placeholder={messagePlaceHolder}
 						name="message"
-						type="text"
-						rows="4 lg:2"
+						rows={2}
 						required
 						onfocus={() => {
 							messagePlaceHolder = '';
