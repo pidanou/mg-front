@@ -35,11 +35,13 @@
 			</button>
 		{/each}
 	</div>
-	<Button onclick={toggleMute} class="= rounded-full" size="icon">
-		{#if !sound.muted}
-			<Volume2 />
-		{:else}
-			<VolumeOff />
-		{/if}
-	</Button>
+	<div>
+		<Button onclick={toggleMute} class="hidden rounded-full" size="icon">
+			{#if !sound.muted}
+				<Volume2 />
+			{:else}
+				<VolumeOff />
+			{/if}
+		</Button>
+	</div>
 </div>

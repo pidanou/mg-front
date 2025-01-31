@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { Motion, useTransform, AnimatePresence, useMotionValue, useSpring } from 'svelte-motion';
+	import { cn } from '$lib/utils/cn';
+	import { onMount } from 'svelte';
 
 	export let items: {
 		id: number;
@@ -20,6 +22,21 @@
 		const halfWidth = event.target?.offsetWidth / 2;
 		x.set(event.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
 	};
+	let userHover = false;
+
+	function simulateHover() {
+		let currentIndex = 0;
+		setInterval(() => {
+			if (userHover) return;
+			x.set((Math.random() * 2 - 1) * 100);
+			hoveredIndex = items[currentIndex].id; // Set hovered index to simulate hover
+			currentIndex = (currentIndex + 1) % items.length; // Cycle through the items
+		}, 5000); // Trigger every 5 seconds
+	}
+
+	onMount(() => {
+		simulateHover(); // Start simulating hover when component is mounted
+	});
 </script>
 
 <div
@@ -29,9 +46,18 @@
 		<div
 			role="img"
 			aria-label="tooltip"
-			class="relative max-h-[calc(100%/3)] max-w-[calc(100%/3)] shrink grow"
-			on:mouseenter={() => (hoveredIndex = item.id)}
-			on:mouseleave={() => (hoveredIndex = null)}
+			class={cn(
+				'relative shrink grow',
+				`max-h-[calc(100%/4)] max-w-[calc(100%/${Math.ceil(items.length / 4)})]`
+			)}
+			on:mouseenter={() => {
+				hoveredIndex = item.id;
+				userHover = true;
+			}}
+			on:mouseleave={() => {
+				hoveredIndex = null;
+				userHover = false;
+			}}
 		>
 			<AnimatePresence show={true}>
 				{#if hoveredIndex === item.id}
@@ -67,14 +93,16 @@
 					</Motion>
 				{/if}
 			</AnimatePresence>
-			<img
-				on:mousemove={handleMouseMove}
-				height={250}
-				width={250}
-				src={item.image}
-				alt={item.name}
-				class="relative !m-0 h-full w-auto rounded-full border-2 border-white object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105"
-			/>
+			<div class={`h-full w-full`} style="animation-delay: {idx * 100}ms;">
+				<img
+					on:mousemove={handleMouseMove}
+					height={300}
+					width={300}
+					src={item.image}
+					alt={item.name}
+					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 lg:h-full"
+				/>
+			</div>
 		</div>
 	{/each}
 </div>

@@ -89,13 +89,22 @@ const config: Config = {
 					'50%': {
 						transform: 'rotate(5deg)'
 					}
+				},
+				jiggle: {
+					'0%, 100%': {
+						transform: 'rotate(-0.5deg)'
+					},
+					'50%': {
+						transform: 'rotate(0.5deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'caret-blink': 'caret-blink 1.25s ease-out infinite',
-				wiggle: 'wiggle 1s ease-in-out infinite'
+				wiggle: 'wiggle 1s ease-in-out infinite',
+				jiggle: 'jiggle 0.5s ease-in-out infinite'
 			}
 		}
 	},
