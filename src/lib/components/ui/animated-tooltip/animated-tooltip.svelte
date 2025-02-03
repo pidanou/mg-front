@@ -40,7 +40,7 @@
 </script>
 
 <div
-	class="group flex h-full w-full flex-row flex-wrap items-center justify-center gap-6 lg:flex-col"
+	class="group flex h-full w-full flex-row flex-wrap items-center justify-center gap-6 2xl:flex-col"
 >
 	{#each items as item, idx (item.name)}
 		<div
@@ -100,7 +100,7 @@
 					width={300}
 					src={item.image}
 					alt={item.name}
-					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 lg:h-full"
+					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 2xl:h-full"
 				/>
 			</div>
 		</div>

@@ -22,7 +22,7 @@
 
 <div class="flex h-full flex-col items-end justify-between gap-6 p-10">
 	<div></div>
-	<div class="flex flex-col gap-6 max-lg:hidden">
+	<div class="flex flex-col gap-6 max-2xl:hidden">
 		{#each [0, 1, 2, 3] as index}
 			<button onclick={() => onclick(index)} class={cn('z-100 h-min w-min', className)}>
 				<Note

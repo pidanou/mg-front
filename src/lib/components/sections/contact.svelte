@@ -19,10 +19,10 @@
 	let typingMessage = $state(false);
 </script>
 
-<div class="relative w-full p-10 lg:p-20">
+<div class="relative w-full p-10 2xl:p-20">
 	<div class="m-auto flex h-full flex-col items-center justify-center gap-6">
-		<div class="flex h-2/3 w-full flex-col items-center gap-20 lg:w-1/2">
-			<div class="text-center text-5xl font-bold lg:p-0">
+		<div class="flex h-2/3 w-full flex-col items-center gap-20 2xl:w-1/2">
+			<div class="text-center text-5xl font-bold 2xl:p-0">
 				<span class="font-black text-[#74a49d]">Contactez-moi!</span>
 			</div>
 			<div class="flex flex-row items-center justify-center gap-10">
@@ -33,7 +33,7 @@
 					><Linkedin class="h-10 w-10 hover:text-[#74a49d]" /></a
 				>
 			</div>
-			<div class="w-1/2 border-b-4 border-[#74a49d] lg:w-1/4"></div>
+			<div class="w-1/2 border-b-4 border-[#74a49d] 2xl:w-1/4"></div>
 			<form
 				class="flex w-full flex-col items-center gap-6"
 				action="https://api.web3forms.com/submit"
@@ -41,15 +41,15 @@
 			>
 				<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 				<div
-					class="flex w-full grow flex-col items-start justify-start gap-6 lg:flex-row lg:gap-20"
+					class="flex w-full grow flex-col items-start justify-start gap-6 2xl:flex-row 2xl:gap-20"
 				>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label
-							class={cn('text-lg font-semibold lg:text-2xl', typingName ? 'text-[#74a49d]' : '')}
+							class={cn('text-lg font-semibold 2xl:text-2xl', typingName ? 'text-[#74a49d]' : '')}
 							>Nom</Label
 						>
 						<Input
-							class="focus:ring-none placeholder:lg rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm focus:border-[#74a49d] lg:text-2xl lg:placeholder:text-2xl"
+							class="focus:ring-none placeholder:lg rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm focus:border-[#74a49d] 2xl:text-2xl 2xl:placeholder:text-2xl"
 							placeholder={namePlaceHolder}
 							type="text"
 							name="name"
@@ -66,11 +66,11 @@
 					</div>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label
-							class={cn('text-lg font-semibold lg:text-2xl', typingMail ? 'text-[#74a49d]' : '')}
+							class={cn('text-lg font-semibold 2xl:text-2xl', typingMail ? 'text-[#74a49d]' : '')}
 							>Email</Label
 						>
 						<Input
-							class="focus:ring-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] lg:text-2xl lg:placeholder:text-2xl"
+							class="focus:ring-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] 2xl:text-2xl 2xl:placeholder:text-2xl"
 							placeholder={mailPlaceHolder}
 							type="email"
 							name="email"
@@ -88,11 +88,11 @@
 				</div>
 				<div class="flex w-full flex-col gap-1.5 text-2xl">
 					<Label
-						class={cn('text-lg font-semibold lg:text-2xl', typingMessage ? 'text-[#74a49d]' : '')}
+						class={cn('text-lg font-semibold 2xl:text-2xl', typingMessage ? 'text-[#74a49d]' : '')}
 						>Message</Label
 					>
 					<Textarea
-						class="focus:ring-none rows-3 lg:rows-2 resize-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] lg:text-2xl lg:placeholder:text-2xl"
+						class="focus:ring-none rows-3 2xl:rows-2 resize-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] 2xl:text-2xl 2xl:placeholder:text-2xl"
 						placeholder={messagePlaceHolder}
 						name="message"
 						rows={2}
