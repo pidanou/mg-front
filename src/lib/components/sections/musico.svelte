@@ -103,10 +103,12 @@
 			une démarche de soin par la musique
 			<span class="font-black text-[#de7466] hover:italic hover:underline">pour tous</span>
 		</div>
-		<Accordion.Root type="single" class="mt-16 w-full">
+		<Accordion.Root type="single" class="mt-10 w-full">
 			{#each content as item, index (item.title + index)}
 				<Accordion.Item class="border-none" value={index.toFixed()}>
-					<Accordion.Trigger class="text-xl font-extrabold">{item.title}</Accordion.Trigger>
+					<Accordion.Trigger class="text-xl font-extrabold lg:text-2xl"
+						>{item.title}</Accordion.Trigger
+					>
 					<Accordion.Content class="text-lg font-semibold"
 						>{@html item.description}</Accordion.Content
 					>

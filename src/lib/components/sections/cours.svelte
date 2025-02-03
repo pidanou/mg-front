@@ -69,7 +69,9 @@
 		<Accordion.Root type="single" class="mt-10 w-full lg:mt-36">
 			{#each content as item, index (item.title + index)}
 				<Accordion.Item class="border-none" value={index.toFixed()}>
-					<Accordion.Trigger class="text-3xl font-extrabold">{item.title}</Accordion.Trigger>
+					<Accordion.Trigger class="text-xl font-extrabold lg:text-2xl"
+						>{item.title}</Accordion.Trigger
+					>
 					<Accordion.Content class="text-lg font-semibold"
 						>{@html item.description}</Accordion.Content
 					>

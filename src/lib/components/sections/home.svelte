@@ -26,44 +26,45 @@
 <!-- 	<source src={BgVideo} type="video/mp4" /> -->
 <!-- </video> -->
 <div
-	class="z-5 flex h-full w-full flex-col items-center justify-center gap-20 p-10 lg:flex-row lg:p-20"
+	class="flex h-full w-full flex-col items-center justify-center gap-20 p-10 lg:flex-row lg:p-20"
 >
 	{#if show}
-		<div
-			class="relative mt-10 flex h-full w-full flex-col items-center gap-10 lg:h-full lg:w-1/3"
-			transition:fly={{
-				x: show ? 200 : -50,
-				duration: 1000,
-				easing: quintOut,
-				opacity: 0
-			}}
-		>
-			<Dancing1
-				class="absolute -top-10 left-0 z-20 h-44 w-44 animate-[bounce_1.5s_infinite]"
-				color="#df7566"
-			/>
-			<img
-				class="z-10 h-auto rounded-full object-cover lg:h-auto lg:w-full"
-				src={Mathilde}
-				alt="Mathilde Guer"
-			/>
+		<div class="mt-10 flex h-full w-full flex-col items-center gap-10 lg:h-full lg:w-1/3">
+			<div
+				class="relative"
+				transition:fly={{
+					x: show ? 200 : -50,
+					duration: 1000,
+					easing: quintOut,
+					opacity: 0
+				}}
+			>
+				<Dancing1
+					class="absolute -top-10 left-0 z-20 h-44 w-44 animate-[bounce_1.5s_infinite]"
+					color="#df7566"
+				/>
+				<Dancing2
+					class="absolute -top-10 right-0 z-0 h-36 w-36 animate-[bounce_1s_infinite]"
+					color="#75A39B"
+				/>
 
+				<Dancing1
+					class="absolute bottom-5 left-0 z-0 h-24 w-24 animate-[wiggle_1s_infinite]"
+					color="#75A39B"
+				/>
+				<Dancing2
+					class="absolute bottom-10 right-0 z-20 h-32 w-32 animate-[wiggle_1.25s_infinite]"
+					color="#df7566"
+				/>
+				<img
+					class="relative z-10 h-auto rounded-full object-cover lg:h-auto lg:w-full"
+					src={Mathilde}
+					alt="Mathilde Guer"
+				/>
+			</div>
 			<div class="z-30 text-center text-4xl font-black">
 				Musicothérapeute clinicienne et professeure de piano
 			</div>
-
-			<Dancing1
-				class="absolute bottom-1/3 left-20 z-20 h-24 w-24 animate-[wiggle_1s_infinite]"
-				color="#75A39B"
-			/>
-			<Dancing2
-				class="absolute -top-10 right-0 h-36 w-36 animate-[bounce_1s_infinite]"
-				color="#75A39B"
-			/>
-			<Dancing2
-				class="absolute bottom-1/2 right-0 z-20 h-32 w-32 animate-[wiggle_1.25s_infinite]"
-				color="#df7566"
-			/>
 		</div>
 		<section
 			class="justify-center lg:w-1/2"
