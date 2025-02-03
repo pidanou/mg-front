@@ -61,7 +61,7 @@
 
 <div class="flex w-screen flex-col gap-6 lg:h-screen lg:flex-row-reverse lg:p-20">
 	<div class="flex flex-col items-start justify-start p-10 lg:h-full lg:w-1/2 lg:p-20">
-		<div class="text-6xl font-bold">
+		<div class="text-4xl font-bold lg:text-6xl">
 			L'apprentissage du piano
 			<span class="font-black text-[#6d83d3] hover:italic hover:underline">adapté</span>
 			à vos capacités

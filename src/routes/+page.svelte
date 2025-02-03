@@ -41,31 +41,33 @@
 	<SideMenu class="" active={page} {onclick} />
 </div>
 
-<div class="fixed left-10 top-10 z-40 h-28 w-28 max-lg:hidden">
-	<Logo />
-</div>
-
 <div
 	bind:this={scrollContainer}
 	{onscroll}
 	class="overflow-y-scroll lg:h-screen lg:snap-y lg:snap-mandatory"
 >
-	<section id="0" class="flex snap-mandatory snap-center items-center justify-center lg:h-screen">
+	<section
+		id="0"
+		class="relative flex snap-mandatory snap-center flex-col items-center justify-center bg-[#fce7df] pt-10 lg:h-screen"
+	>
+		<div class="absolute left-10 top-10 z-40 h-14 w-14 lg:fixed lg:h-28 lg:w-28">
+			<Logo />
+		</div>
 		<Home />
 	</section>
 	<section
-		id="2"
+		id="1"
 		class="flex snap-mandatory snap-center items-center justify-center bg-green-100 lg:h-screen"
 	>
 		<Musico />
 	</section>
 	<section
-		id="3"
+		id="2"
 		class="flex snap-mandatory snap-center items-center justify-center bg-pink-100 lg:h-screen"
 	>
 		<Cours />
 	</section>
-	<section id="4" class="flex snap-mandatory snap-center items-center justify-center lg:h-screen">
+	<section id="3" class="flex snap-mandatory snap-center items-center justify-center lg:h-screen">
 		<Contact />
 	</section>
 </div>
