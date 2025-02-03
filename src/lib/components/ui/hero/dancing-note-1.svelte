@@ -1,6 +1,6 @@
 <script>
 	import { cn } from '$lib/utils/cn';
-	let { class: className = '', color = '', size = '24' } = $props();
+	let { class: className = '', color = '' } = $props();
 </script>
 
 <svg

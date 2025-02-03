@@ -80,22 +80,22 @@
 		},
 		{
 			id: 7,
+			name: 'Personnes en situation de handicap',
+			designation: 'amélioration de la qualité de vie',
+			image: Handicap
+		},
+		{
+			id: 8,
 			name: 'Institution',
 			designation:
 				'amélioration de la qualité de vie des patients ou résidents en collaboration avec l’équipe pluridisciplinaire.',
 			image: Institution
-		},
-		{
-			id: 8,
-			name: 'Personnes en situation de handicap',
-			designation: 'amélioration de la qualité de vie',
-			image: Handicap
 		}
 	];
 </script>
 
-<div class="flex w-screen flex-col gap-6 2xl:h-screen 2xl:flex-row 2xl:p-20">
-	<div class="flex flex-col items-start justify-start p-10 2xl:h-full 2xl:w-1/2 2xl:p-20">
+<div class="flex w-screen flex-col gap-6 p-10 lg:p-20 xl:flex-row 2xl:h-screen">
+	<div class="flex flex-col items-start justify-start 2xl:h-full 2xl:w-1/2 2xl:p-20">
 		<div class="text-4xl font-bold 2xl:text-5xl">
 			La
 			<span class="font-black text-[#de7466] hover:italic hover:underline">musicothérapie</span>,<br
@@ -117,7 +117,7 @@
 		</Accordion.Root>
 	</div>
 	<div class="relative h-full 2xl:w-1/2">
-		<div class="flex h-full w-full p-20">
+		<div class="flex h-full w-full px-20 pb-10 2xl:p-20">
 			<AnimatedTooltip items={people} />
 		</div>
 	</div>

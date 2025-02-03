@@ -46,10 +46,6 @@
 		<div
 			role="img"
 			aria-label="tooltip"
-			class={cn(
-				'relative shrink grow',
-				`max-h-[calc(100%/4)] max-w-[calc(100%/${Math.ceil(items.length / 4)})]`
-			)}
 			on:mouseenter={() => {
 				hoveredIndex = item.id;
 				userHover = true;
@@ -83,7 +79,7 @@
 					>
 						<div
 							use:motion
-							class="absolute z-50 flex translate-x-1/2 flex-col items-center justify-center rounded-sm bg-black px-4 py-2 text-xs shadow-xl"
+							class="absolute z-50 flex w-52 min-w-fit flex-col items-center justify-center rounded-sm bg-black px-4 py-2 text-xs shadow-xl"
 						>
 							<div class="relative z-30 whitespace-nowrap text-base font-bold text-white">
 								{item.name}
@@ -100,7 +96,7 @@
 					width={300}
 					src={item.image}
 					alt={item.name}
-					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 2xl:h-full"
+					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 xl:h-40"
 				/>
 			</div>
 		</div>

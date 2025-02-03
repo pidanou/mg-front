@@ -29,9 +29,11 @@
 	class="flex h-full w-full flex-col items-center justify-center gap-20 p-10 lg:flex-row 2xl:p-20"
 >
 	{#if show}
-		<div class="mt-10 flex h-full w-full flex-col items-center gap-10 2xl:h-full 2xl:w-1/3">
+		<div
+			class="mt-10 flex h-full w-full flex-col items-center justify-center gap-10 2xl:h-full 2xl:w-1/3"
+		>
 			<div
-				class="relative"
+				class="relative flex flex-col items-center"
 				transition:fly={{
 					x: show ? 200 : -50,
 					duration: 1000,
@@ -40,24 +42,24 @@
 				}}
 			>
 				<Dancing1
-					class="absolute -top-10 left-0 z-20 h-44 w-44 animate-[bounce_1.5s_infinite]"
+					class="absolute -top-10 left-0 z-20 h-24 w-24 animate-[bounce_1.5s_infinite] xl:h-44 xl:w-44"
 					color="#df7566"
 				/>
 				<Dancing2
-					class="absolute -top-10 right-0 z-0 h-36 w-36 animate-[bounce_1s_infinite]"
+					class="absolute -top-10 right-0 z-0 h-16 w-16  animate-[bounce_1s_infinite] xl:h-36 xl:w-36"
 					color="#75A39B"
 				/>
 
 				<Dancing1
-					class="absolute bottom-5 left-0 z-0 h-24 w-24 animate-[wiggle_1s_infinite]"
+					class="absolute bottom-5 left-0 z-0 h-10 w-10 animate-[wiggle_1s_infinite] xl:h-24 xl:w-24"
 					color="#75A39B"
 				/>
 				<Dancing2
-					class="absolute bottom-10 right-0 z-20 h-32 w-32 animate-[wiggle_1.25s_infinite]"
+					class="absolute bottom-10 right-0 z-20 h-20 w-20 animate-[wiggle_1.25s_infinite] xl:h-32 xl:w-32"
 					color="#df7566"
 				/>
 				<img
-					class="relative z-10 h-auto rounded-full object-cover 2xl:h-auto 2xl:w-full"
+					class="relative z-10 h-auto w-2/3 rounded-full object-cover 2xl:h-auto 2xl:w-full"
 					src={Mathilde}
 					alt="Mathilde Guer"
 				/>

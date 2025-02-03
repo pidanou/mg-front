@@ -44,11 +44,11 @@
 <div
 	bind:this={scrollContainer}
 	{onscroll}
-	class="overflow-y-scroll 2xl:h-screen 2xl:snap-y 2xl:snap-mandatory"
+	class="overflow-y-scroll lg:h-screen lg:snap-y lg:snap-mandatory"
 >
 	<section
 		id="0"
-		class="relative flex snap-mandatory snap-center flex-col items-center justify-center bg-[#fce7df] pt-10 2xl:h-screen"
+		class="relative flex snap-mandatory snap-center flex-col items-center justify-center bg-[#fce7df] pt-10 lg:h-screen"
 	>
 		<div class="absolute left-10 top-10 z-40 h-14 w-14 2xl:fixed 2xl:h-28 2xl:w-28">
 			<Logo />
@@ -57,17 +57,17 @@
 	</section>
 	<section
 		id="1"
-		class="flex snap-mandatory snap-center items-center justify-center bg-green-100 2xl:h-screen"
+		class="flex snap-mandatory snap-center items-center justify-center bg-green-100 lg:h-screen"
 	>
 		<Musico />
 	</section>
 	<section
 		id="2"
-		class="flex snap-mandatory snap-center items-center justify-center bg-pink-100 2xl:h-screen"
+		class="flex snap-mandatory snap-center items-center justify-center bg-pink-100 lg:h-screen"
 	>
 		<Cours />
 	</section>
-	<section id="3" class="flex snap-mandatory snap-center items-center justify-center 2xl:h-screen">
+	<section id="3" class="flex snap-mandatory snap-center items-center justify-center lg:h-screen">
 		<Contact />
 	</section>
 </div>
