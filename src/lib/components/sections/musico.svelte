@@ -94,7 +94,7 @@
 	];
 </script>
 
-<div class="flex w-screen flex-col gap-6 p-10 lg:p-20 xl:flex-row 2xl:h-screen">
+<div class="flex w-screen flex-col gap-6 p-10 lg:p-20 2xl:h-screen 2xl:flex-row">
 	<div class="flex flex-col items-start justify-start 2xl:h-full 2xl:w-1/2 2xl:p-20">
 		<div class="text-4xl font-bold 2xl:text-5xl">
 			La

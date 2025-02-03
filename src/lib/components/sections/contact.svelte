@@ -39,7 +39,7 @@
 				action="https://api.web3forms.com/submit"
 				method="POST"
 			>
-				<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+				<input type="hidden" name="access_key" value="be70568c-8ec8-4e56-b91a-ff7ed0054c7e" />
 				<div
 					class="flex w-full grow flex-col items-start justify-start gap-6 2xl:flex-row 2xl:gap-20"
 				>
