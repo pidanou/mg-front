@@ -51,13 +51,13 @@
 		</div>
 		<Home />
 	</section>
-	<section id="1" class="items-center justify-center bg-green-100">
+	<section id="1" class="bg-green-100">
 		<Musico />
 	</section>
-	<section id="2" class="items-center justify-center bg-pink-100">
+	<section id="2" class="bg-pink-100">
 		<Cours />
 	</section>
-	<section id="3" class="h-screen items-center justify-center">
+	<section id="3" class="">
 		<Contact />
 	</section>
 </div>

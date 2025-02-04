@@ -81,7 +81,7 @@
 							use:motion
 							class="absolute z-50 flex min-w-fit flex-col items-center justify-center rounded-sm bg-black px-4 py-2 text-xs shadow-xl"
 						>
-							<div class="relative z-30 whitespace-nowrap text-base font-bold text-white">
+							<div class="relative z-30 text-center text-base font-bold text-white">
 								{@html item.name}
 							</div>
 							<div class="text-xs text-white">{@html item.designation}</div>
@@ -96,7 +96,7 @@
 					width={300}
 					src={item.image}
 					alt={item.name}
-					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 2xl:h-36"
+					class="relative !m-0 h-24 w-auto basis-1/3 rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 2xl:h-36"
 				/>
 			</div>
 		</div>

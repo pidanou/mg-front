@@ -117,8 +117,8 @@
 			{/each}
 		</Accordion.Root>
 	</div>
-	<div class="2xl:h-screen 2xl:w-1/2">
-		<div class="flex h-full w-full px-20 pb-10 2xl:p-20">
+	<div class="w-full 2xl:h-screen 2xl:w-1/2">
+		<div class="flex h-full w-full 2xl:p-20">
 			<AnimatedTooltip items={people} />
 		</div>
 	</div>

@@ -38,7 +38,8 @@
 					x: show ? 200 : -50,
 					duration: 1000,
 					easing: quintOut,
-					opacity: 0
+					opacity: 0,
+					delay: 100
 				}}
 			>
 				<Dancing1
@@ -64,13 +65,21 @@
 					alt="Mathilde Guer"
 				/>
 			</div>
-			<div class="z-30 text-center text-4xl font-black">
+			<div
+				class="z-30 text-center text-4xl font-black"
+				transition:fly={{
+					x: show ? 200 : -50,
+					duration: 1000,
+					easing: quintOut,
+					opacity: 0
+				}}
+			>
 				Musicothérapeute clinicienne et professeure de piano
 			</div>
 		</div>
 		<section
 			class="justify-center 2xl:w-1/2"
-			in:fly={{ x: 200, duration: 1000, easing: quintOut, delay: 100 }}
+			in:fly={{ x: 200, duration: 1000, easing: quintOut, delay: 200 }}
 		>
 			<h2 class="text-4xl font-black">Bonjour!</h2>
 			<br /> <br />
