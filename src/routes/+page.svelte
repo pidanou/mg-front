@@ -42,10 +42,7 @@
 </div>
 
 <div bind:this={scrollContainer} {onscroll} class="h-screen overflow-auto">
-	<section
-		id="0"
-		class="relative flex flex-col items-center justify-center bg-[#fce7df] pt-10 lg:h-screen"
-	>
+	<section id="0" class="relative bg-[#fce7df] lg:h-screen">
 		<div class="absolute left-10 top-10 z-40 h-14 w-14 2xl:fixed 2xl:h-28 2xl:w-28">
 			<Logo />
 		</div>
@@ -57,7 +54,7 @@
 	<section id="2" class="bg-pink-100">
 		<Cours />
 	</section>
-	<section id="3" class="">
+	<section id="3" class="h-screen">
 		<Contact />
 	</section>
 </div>
