@@ -59,7 +59,7 @@
 	];
 </script>
 
-<div class="flex w-screen flex-col items-center gap-6 p-10 lg:p-20 2xl:flex-row-reverse">
+<div class="flex w-screen flex-col gap-6 p-10 lg:p-20 2xl:flex-row-reverse">
 	<div class="flex w-full flex-col items-start justify-start 2xl:h-full 2xl:w-1/2 2xl:p-20">
 		<div class="text-4xl font-bold 2xl:text-6xl">
 			L'apprentissage du piano

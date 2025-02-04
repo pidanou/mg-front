@@ -2,8 +2,8 @@
 	import { AnimatedTooltip } from '$lib/components/ui/animated-tooltip';
 	import * as Accordion from '$lib/components/ui/accordion/index';
 	import Newborn from '$lib/assets/NouveauNe.jpg';
-	import Child from '$lib/assets/EnfantMusique.png';
-	import Teen from '$lib/assets/Adolescent.png';
+	import Child from '$lib/assets/Enfants.jpg';
+	import Teen from '$lib/assets/Ado.jpg';
 	import Adult from '$lib/assets/Adulte.jpg';
 	import Senior from '$lib/assets/PersonnesAgees.jpg';
 	import End from '$lib/assets/FinDeVie.jpg';
@@ -95,8 +95,8 @@
 	];
 </script>
 
-<div class="flex w-screen flex-col items-center gap-6 p-10 lg:p-20 2xl:flex-row">
-	<div class="flex w-full flex-col items-start justify-start 2xl:h-full 2xl:w-1/2 2xl:p-20">
+<div class="flex w-screen flex-col gap-6 p-10 lg:p-20 2xl:flex-row">
+	<div class="flex w-full flex-col items-start justify-start 2xl:h-full 2xl:w-2/5 2xl:p-20">
 		<div class="text-4xl font-bold 2xl:text-5xl">
 			La
 			<span class="font-black text-[#de7466] hover:italic hover:underline">musicothérapie</span>,<br
@@ -117,7 +117,7 @@
 			{/each}
 		</Accordion.Root>
 	</div>
-	<div class="w-full 2xl:h-screen 2xl:w-1/2">
+	<div class="w-full 2xl:h-screen 2xl:w-3/5">
 		<div class="flex h-full w-full 2xl:p-20">
 			<AnimatedTooltip items={people} />
 		</div>
