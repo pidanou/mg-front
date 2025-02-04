@@ -51,7 +51,7 @@
 		</div>
 		<Home />
 	</section>
-	<section id="1" class="bg-green-100">
+	<section id="1" class="bg-green-50">
 		<Musico />
 	</section>
 	<section id="2" class="bg-pink-100">

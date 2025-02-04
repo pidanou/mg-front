@@ -33,8 +33,7 @@
 		},
 		{
 			title: 'Liens utiles',
-			description:
-				'<a class="underline" href="https://www.musicotherapeutes.fr" target="_blank">musicotherapeutes.fr</a> <br> <a class="underline" href="https://francemusicotherapie.fr" target="_blank">francemusicotherapie.fr</a>'
+			description: `<a class="underline" aria-label="Plus d'information sur les musicothérapeutes" href="https://www.musicotherapeutes.fr" target="_blank">musicotherapeutes.fr</a> <br> <a class="underline" aria-label="Plus d'indormation sur la musicothérapie" href="https://francemusicotherapie.fr" target="_blank">francemusicotherapie.fr</a>`
 		}
 	];
 
@@ -99,10 +98,10 @@
 	<div class="flex w-full flex-col items-start justify-start 2xl:h-full 2xl:w-2/5 2xl:p-20">
 		<div class="text-4xl font-bold 2xl:text-5xl">
 			La
-			<span class="font-black text-[#de7466] hover:italic hover:underline">musicothérapie</span>,<br
+			<span class="font-black text-[#de7433] hover:italic hover:underline">musicothérapie</span>,<br
 			/>
 			une démarche de soin par la musique
-			<span class="font-black text-[#de7466] hover:italic hover:underline">pour tous</span>
+			<span class="font-black text-[#de7433] hover:italic hover:underline">pour tous</span>
 		</div>
 		<Accordion.Root type="single" class="mt-10 w-full">
 			{#each content as item, index (item.title + index)}

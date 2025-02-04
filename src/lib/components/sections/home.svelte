@@ -61,6 +61,8 @@
 				/>
 				<img
 					class="relative z-10 h-auto w-2/3 rounded-full object-cover 2xl:h-auto 2xl:w-full"
+					height={200}
+					width={200}
 					src={Mathilde}
 					alt="Mathilde Guer"
 				/>

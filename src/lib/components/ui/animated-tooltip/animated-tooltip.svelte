@@ -92,8 +92,8 @@
 			<div class={`h-full w-full`} style="animation-delay: {idx * 100}ms;">
 				<img
 					on:mousemove={handleMouseMove}
-					height={300}
-					width={300}
+					height={100}
+					width={100}
 					src={item.image}
 					alt={item.name}
 					class="relative !m-0 h-24 w-auto basis-1/3 rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 2xl:h-36"

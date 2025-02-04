@@ -24,7 +24,11 @@
 	<div></div>
 	<div class="flex flex-col gap-6 max-lg:hidden">
 		{#each [0, 1, 2, 3] as index}
-			<button onclick={() => onclick(index)} class={cn('z-100 h-min w-min', className)}>
+			<button
+				aria-label={index.toString()}
+				onclick={() => onclick(index)}
+				class={cn('z-100 h-min w-min', className)}
+			>
 				<Note
 					transition={draw}
 					active={active === index}

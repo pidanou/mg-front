@@ -20,10 +20,16 @@
 				<span class="font-black text-[#74a49d]">Contactez-moi!</span>
 			</div>
 			<div class="flex flex-row items-center justify-center gap-6">
-				<a href="https://www.instagram.com/mathildeguerei/" target="_blank"
+				<a
+					href="https://www.instagram.com/mathildeguerei/"
+					target="_blank"
+					aria-label="Aller vers la page Instagram"
 					><Instagram class="h-10 w-10 hover:text-[#74a49d]" /></a
 				>
-				<a href="https://www.linkedin.com/in/mathilde-guer-6089b91b9/" target="_blank"
+				<a
+					href="https://www.linkedin.com/in/mathilde-guer-6089b91b9/"
+					target="_blank"
+					aria-label="Aller vers la page Linkedin"
 					><Linkedin class="h-10 w-10 hover:text-[#74a49d]" /></a
 				>
 			</div>
@@ -39,10 +45,12 @@
 				>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label
+							for="name"
 							class={cn('text-lg font-semibold 2xl:text-2xl', typingName ? 'text-[#74a49d]' : '')}
 							>Nom</Label
 						>
 						<Input
+							id="name"
 							class="focus:ring-none placeholder:lg rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm focus:border-[#74a49d] 2xl:text-2xl 2xl:placeholder:text-2xl"
 							type="text"
 							name="name"
@@ -57,10 +65,12 @@
 					</div>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label
+							for="email"
 							class={cn('text-lg font-semibold 2xl:text-2xl', typingMail ? 'text-[#74a49d]' : '')}
 							>Email</Label
 						>
 						<Input
+							id="email"
 							class="focus:ring-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] 2xl:text-2xl 2xl:placeholder:text-2xl"
 							type="email"
 							name="email"
@@ -76,10 +86,12 @@
 				</div>
 				<div class="flex w-full flex-col gap-1.5 text-2xl">
 					<Label
+						for="message"
 						class={cn('text-lg font-semibold 2xl:text-2xl', typingMessage ? 'text-[#74a49d]' : '')}
 						>Message</Label
 					>
 					<Textarea
+						id="message"
 						class="focus:ring-none rounded-none border-0 border-b-4 border-gray-300 p-0 text-sm placeholder:text-lg focus:border-[#74a49d] 2xl:text-2xl 2xl:placeholder:text-2xl"
 						name="message"
 						required
