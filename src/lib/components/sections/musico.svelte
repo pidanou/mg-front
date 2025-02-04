@@ -33,7 +33,8 @@
 		},
 		{
 			title: 'Liens utiles',
-			description: ''
+			description:
+				'<a class="underline" href="https://www.musicotherapeutes.fr" target="_blank">musicotherapeutes.fr</a> <br> <a class="underline" href="https://francemusicotherapie.fr" target="_blank">francemusicotherapie.fr</a>'
 		}
 	];
 
@@ -41,41 +42,41 @@
 		{
 			id: 1,
 			name: 'Nouveau-né',
-			designation: 'Diminution de l’anxiété des nouveaux-nés, relation parents enfants…',
+			designation: 'Diminution de l’anxiété des nouveaux-nés, <br> relation parents enfants…',
 			image: Newborn
 		},
 		{
 			id: 2,
 			name: 'Enfant',
 			designation:
-				'difficultés scolaires, difficultés sociales, expression des émotions,  addictions aux écrans…',
+				'difficultés scolaires, difficultés sociales, <br> expression des émotions,  addictions aux écrans…',
 			image: Child
 		},
 		{
 			id: 3,
 			name: 'Adolescent',
-			designation: `confiance en soi, expression des émotions, diminutions de l'anxiété, difficultés scolaires, difficultés sociales, addictions…`,
+			designation: `confiance en soi, expression des émotions, <br> diminutions de l'anxiété, difficultés scolaires, <br> difficultés sociales, addictions…`,
 			image: Teen
 		},
 		{
 			id: 4,
 			name: 'Adulte',
 			designation:
-				'diminution de l’anxiété, diminution des douleurs chroniques, augmentation de la motivation, addictions',
+				'diminution de l’anxiété, <br> diminution des douleurs chroniques,<br> augmentation de la motivation, addictions',
 			image: Adult
 		},
 		{
 			id: 5,
 			name: 'Senior',
 			designation:
-				'stimulation cognitive, maintien de l’autonomie, stimulation motrice, diminution de l’anxiété, diminution de la douleur',
+				'stimulation cognitive, maintien de l’autonomie, <br> stimulation motrice, diminution de l’anxiété, <br> diminution de la douleur',
 			image: Senior
 		},
 		{
 			id: 6,
 			name: 'Personne en fin de vie',
 			designation:
-				'diminution de l’anxiété, diminution des douleurs, acceptation de la mort, rappel des souvenirs…',
+				'diminution de l’anxiété, diminution des douleurs, <br> acceptation de la mort, rappel des souvenirs…',
 			image: End
 		},
 		{
@@ -94,8 +95,8 @@
 	];
 </script>
 
-<div class="flex w-screen flex-col gap-6 p-10 lg:p-20 2xl:h-screen 2xl:flex-row">
-	<div class="flex flex-col items-start justify-start 2xl:h-full 2xl:w-1/2 2xl:p-20">
+<div class="flex w-screen flex-col items-center gap-6 p-10 lg:p-20 2xl:flex-row">
+	<div class="flex w-full flex-col items-start justify-start 2xl:h-full 2xl:w-1/2 2xl:p-20">
 		<div class="text-4xl font-bold 2xl:text-5xl">
 			La
 			<span class="font-black text-[#de7466] hover:italic hover:underline">musicothérapie</span>,<br
@@ -116,7 +117,7 @@
 			{/each}
 		</Accordion.Root>
 	</div>
-	<div class="relative h-full 2xl:w-1/2">
+	<div class="2xl:h-screen 2xl:w-1/2">
 		<div class="flex h-full w-full px-20 pb-10 2xl:p-20">
 			<AnimatedTooltip items={people} />
 		</div>

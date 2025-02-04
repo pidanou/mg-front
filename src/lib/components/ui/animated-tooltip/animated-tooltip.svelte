@@ -40,7 +40,7 @@
 </script>
 
 <div
-	class="group flex h-full w-full flex-row flex-wrap items-center justify-center gap-6 2xl:flex-col"
+	class="group relative flex h-full w-full flex-row flex-wrap items-center justify-center gap-6 2xl:flex-col"
 >
 	{#each items as item, idx (item.name)}
 		<div
@@ -79,12 +79,12 @@
 					>
 						<div
 							use:motion
-							class="absolute z-50 flex w-52 min-w-fit flex-col items-center justify-center rounded-sm bg-black px-4 py-2 text-xs shadow-xl"
+							class="absolute z-50 flex min-w-fit flex-col items-center justify-center rounded-sm bg-black px-4 py-2 text-xs shadow-xl"
 						>
 							<div class="relative z-30 whitespace-nowrap text-base font-bold text-white">
-								{item.name}
+								{@html item.name}
 							</div>
-							<div class="text-xs text-white">{item.designation}</div>
+							<div class="text-xs text-white">{@html item.designation}</div>
 						</div>
 					</Motion>
 				{/if}
@@ -96,7 +96,7 @@
 					width={300}
 					src={item.image}
 					alt={item.name}
-					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 xl:h-40"
+					class="relative !m-0 h-20 w-auto rounded-full object-cover object-top !p-0 transition duration-500 group-hover:z-30 group-hover:scale-105 2xl:h-36"
 				/>
 			</div>
 		</div>
