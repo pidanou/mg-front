@@ -15,12 +15,12 @@
 		{
 			title: 'Eveil musical',
 			description:
-				'L’éveil musical concerne les enfants de moins de 5 ans. L’enfant découvre l’univers de la musique à travers la découverte et l’improvisation instrumentale ou vocale.'
+				'L’éveil musical concerne les enfants de moins de 5 ans. L’enfant entre dans l’univers de la musique à travers la découverte et l’improvisation instrumentale ou vocale.'
 		},
 		{
 			title: 'Formation musicale',
 			description:
-				"Chaque cours de piano ou d’éveil musical est agrémenté d'éléments de formation musicale. Cependant vous pouvez également prendre des cours de formations musicales afin d’enrichir votre compréhension et votre écoute musicale."
+				"Chaque cours de piano ou d’éveil musical est agrémenté d'éléments de formation musicale. Cependant vous pouvez également prendre des cours complémentaires de formation musicale afin d’enrichir votre compréhension et votre écoute musicale."
 		}
 	];
 
@@ -29,31 +29,31 @@
 			id: 1,
 			name: 'Classique',
 			designation:
-				'de l’époque baroque (Bach) <br> passant le le romantisme (Chopin) <br> à l’époque contemporaine (Glass).',
+				'De l’époque baroque (Jean-Sébastien Bach) <br> en passant par le romantisme (Frédéric Chopin) <br> jusqu’à l’époque contemporaine (Philip Glass).',
 			image: Classique
 		},
 		{
 			id: 2,
 			name: 'Musique actuelle',
-			designation: 'les morceaux sont arrangés au niveau de chacun',
+			designation: 'Variété, Pop Rock, Jazz…',
 			image: Actuel
 		},
 		{
 			id: 3,
 			name: 'Musique de film',
-			designation: 'Intouchable, Interstellar, Amélie Poulain et d’autres',
+			designation: 'Intouchable, Interstellar, Amélie Poulain et d’autres...',
 			image: Film
 		},
 		{
 			id: 4,
 			name: 'Improvision',
-			designation: 'apprentissage de l’expression musicale à travers le piano',
+			designation: 'Apprentissage de l’expression musicale à travers le piano.',
 			image: Improvisation
 		},
 		{
 			id: 5,
 			name: 'Harmonisation',
-			designation: 'apprentissage des différentes tonalités et de leurs accords associés',
+			designation: 'Apprentissage des différentes tonalités et de leurs accords associés.',
 			image: Harmonisation
 		}
 	];
@@ -64,7 +64,7 @@
 		<div class="text-4xl font-bold 2xl:text-6xl">
 			L'apprentissage du piano
 			<span class="font-black text-[#6d83d3] hover:italic hover:underline">adapté</span>
-			à vos capacités
+			à vos envies
 		</div>
 		<Accordion.Root type="single" class="mt-10 w-full 2xl:mt-36">
 			{#each content as item, index (item.title + index)}

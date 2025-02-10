@@ -14,22 +14,22 @@
 		{
 			title: 'Pourquoi utiliser la musique ?',
 			description:
-				'Jouer et écouter de la musique stimule la motivation, la mémoire, l’attention, les compétences sociales, la motricité, les émotions… Elle peut également réduire les tensions musculaires, la fréquence cardiaque, la pression artérielle.'
+				'Jouer et écouter de la musique stimule la motivation, la mémoire, l’attention, les compétences sociales, la motricité, les émotions… Elle peut également réduire les tensions musculaires, la fréquence cardiaque et la pression artérielle.'
 		},
 		{
 			title: 'Les outils du musicothérapeute',
 			description:
-				'J’utilise trois outils en musicothérapie, la musicothérapie active, la musicothérapie réceptive et la détentes psychomusicale. <br><br> 🎹 &nbsp En musicothérapie active, nous utilisons des instruments faciles d’utilisation ne nécessitant aucune compétence musicale. <br> 👂🏼 &nbsp En musicothérapie réceptive, nous écoutons de la musique en lien avec vos objectifs, suivi d’un espace d’échange. <br>🧘🏽‍♀️ &nbsp En détente psychomusicale, vous pouvez vous laisser porter par la musique que je vous joue en direct. '
+				'J’utilise trois grands outils en musicothérapie : la musicothérapie active, la musicothérapie réceptive et la détente psychomusicale. <br><br> 🎹  En musicothérapie active, nous sélectionnons des instruments faciles d’utilisation ne nécessitant aucune compétence musicale.<br>👂  En musicothérapie réceptive, nous écoutons de la musique en lien avec vos objectifs, suivi d’un espace d’échange. <br>🧘  En détente psychomusicale, vous pouvez vous laisser porter par la musique que je vous joue en direct.'
 		},
 		{
 			title: "Cadre d'intervention",
 			description:
-				'Chaque prise en charge débute par un bilan en musicothérapie en trois étapes ( un entretien, un bilan en musicothérapie active et un bilan en musicothérapie réceptive)  afin d’établir ensemble un projet personnalisé adapté à vos besoins. <br><br> La musicothérapie se pratique en séance de groupe ou en individuel durant en moyenne 4/3 d’heures adaptable en fonction de chacun. <br><br> Les séances ont lieu aux alentours de Sallanches (74).'
+				'Chaque prise en charge débute par un bilan en musicothérapie en trois étapes (un entretien, un bilan en musicothérapie active et un bilan en musicothérapie réceptive) afin d’établir ensemble un projet personnalisé adapté à vos besoins. <br><br> La musicothérapie se pratique en séance de groupe ou en individuel durant en moyenne trois-quarts d’heure adaptable en fonction de chacun. <br><br>Les séances ont lieu dans les alentours de Sallanches (74).'
 		},
 		{
 			title: 'Public visé',
 			description:
-				'La musicothérapie s’adapte à divers besoins que vous soyez une personne en situation de handicap, que vous soyez hospitalisé ou non à partir du moment où vous êtes réceptifs à la musique.'
+				'La musicothérapie s’adapte à toutes les personnes ayant à cœur l’amélioration de leur qualité de vie en se basant sur les bienfaits de la musique.'
 		},
 		{
 			title: 'Liens utiles',
@@ -41,54 +41,54 @@
 		{
 			id: 1,
 			name: 'Nouveau-né',
-			designation: 'Diminution de l’anxiété des nouveaux-nés, <br> relation parents enfants…',
+			designation: 'Diminution de l’anxiété des nouveau-nés, relation parents-enfants…',
 			image: Newborn
 		},
 		{
 			id: 2,
 			name: 'Enfant',
 			designation:
-				'difficultés scolaires, difficultés sociales, <br> expression des émotions,  addictions aux écrans…',
+				'Difficultés scolaires, difficultés sociales, <br> expression des émotions,  addictions aux écrans…',
 			image: Child
 		},
 		{
 			id: 3,
 			name: 'Adolescent',
-			designation: `confiance en soi, expression des émotions, <br> diminutions de l'anxiété, difficultés scolaires, <br> difficultés sociales, addictions…`,
+			designation: `Confiance en soi, expression des émotions, <br> diminutions de l'anxiété, difficultés scolaires, <br> difficultés sociales, addictions…`,
 			image: Teen
 		},
 		{
 			id: 4,
 			name: 'Adulte',
 			designation:
-				'diminution de l’anxiété, <br> diminution des douleurs chroniques,<br> augmentation de la motivation, addictions',
+				'Diminution de l’anxiété, <br> diminution des douleurs chroniques,<br> augmentation de la motivation, addictions...',
 			image: Adult
 		},
 		{
 			id: 5,
 			name: 'Senior',
 			designation:
-				'stimulation cognitive, maintien de l’autonomie, <br> stimulation motrice, diminution de l’anxiété, <br> diminution de la douleur',
+				'Stimulation cognitive, maintien de l’autonomie, <br> stimulation motrice, diminution de l’anxiété, <br> diminution de la douleur...',
 			image: Senior
 		},
 		{
 			id: 6,
 			name: 'Personne en fin de vie',
 			designation:
-				'diminution de l’anxiété, diminution des douleurs, <br> acceptation de la mort, rappel des souvenirs…',
+				'Diminution de l’anxiété, diminution des douleurs, <br> acceptation de la mort, rappel des souvenirs…',
 			image: End
 		},
 		{
 			id: 7,
 			name: 'Personnes en situation de handicap',
-			designation: 'amélioration de la qualité de vie',
+			designation: 'Amélioration de la qualité de vie...',
 			image: Handicap
 		},
 		{
 			id: 8,
 			name: 'Institution',
 			designation:
-				'amélioration de la qualité de vie des patients ou résidents en collaboration avec l’équipe pluridisciplinaire.',
+				'Amélioration de la qualité de vie des patients ou des résidents en collaboration avec l’équipe pluridisciplinaire.',
 			image: Institution
 		}
 	];

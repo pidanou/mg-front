@@ -86,17 +86,18 @@
 			<h2 class="text-4xl font-black">Bonjour!</h2>
 			<br /> <br />
 			<p class="text-sm font-semibold 2xl:text-xl">
-				Je m’appelle Mathilde Guer, j’exerce le métier de musicothérapeute clinicienne et de
-				professeur de piano. <br />
-				Mon parcours musical à débuté durant mon enfance par l’apprentissage de la guitare puis du piano
-				en conservatoire à rayonnement régional (Annecy et Montpellier). Aujourd’hui j'apprends la clarinette
-				en autodidacte. <br /><br /> Je me suis également formée à l’université Paul Valéry
-				Montpellier 3 en tant que musicothérapeute clinicienne. Ce diplôme est reconnu par la
-				Fédération Française des Musicothérapeutes (voir liens utiles). <br /> <br />
-				J’ai choisi d’utiliser le piano comme outil d’enseignement pour partager un savoir créatif, d’expression,
-				et d’évasion pouvant être utilisé pour son bien être tout au long de notre vie. Mon métier de
-				musicothérapeute clinicienne m’est venu par la volonté d’utiliser les divers effets de la musique,
-				sur la cognitif, l’affectif, le social et le moteur, dans un cadre de soin thérapeutique
+				Je m’appelle Mathilde Guer, j’exerce les métiers de musicothérapeute clinicienne et de
+				professeur de piano. Mon parcours musical a débuté durant mon enfance par l’apprentissage de
+				la guitare puis du piano en conservatoire à rayonnement régional (Annecy et Montpellier).
+				Aujourd’hui je pratique également la clarinette. <br /> <br />
+				Je me suis formée à l’université Paul Valéry Montpellier 3 en tant que musicothérapeute clinicienne.
+				Ce diplôme est reconnu par la Fédération Française des Musicothérapeutes (voir liens utiles).
+				<br /><br />
+				J’ai choisi d’utiliser le piano comme outil d’enseignement pour partager un savoir créatif et
+				expressif pouvant être utilisé pour notre bien-être tout au long de notre vie. L’envie de pratiquer
+				le métier de musicothérapeute clinicienne m’est venue par la volonté d’utiliser les divers effets
+				bénéfiques de la musique dans les domaines cognitifs, affectifs, sociaux et moteurs, dans un
+				cadre de soin thérapeutique.
 			</p>
 		</section>
 	{/if}
