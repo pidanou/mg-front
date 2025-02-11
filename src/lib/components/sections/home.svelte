@@ -87,9 +87,9 @@
 			<br /> <br />
 			<p class="text-sm font-semibold 2xl:text-xl">
 				Je m’appelle Mathilde Guer, j’exerce les métiers de musicothérapeute clinicienne et de
-				professeur de piano. Mon parcours musical a débuté durant mon enfance par l’apprentissage de
-				la guitare puis du piano en conservatoire à rayonnement régional (Annecy et Montpellier).
-				Aujourd’hui je pratique également la clarinette. <br /> <br />
+				professeur de piano en Haute-Savoie. Mon parcours musical a débuté durant mon enfance par
+				l’apprentissage de la guitare puis du piano en conservatoire à rayonnement régional (Annecy
+				et Montpellier). Aujourd’hui je pratique également la clarinette. <br /> <br />
 				Je me suis formée à l’université Paul Valéry Montpellier 3 en tant que musicothérapeute clinicienne.
 				Ce diplôme est reconnu par la Fédération Française des Musicothérapeutes (voir liens utiles).
 				<br /><br />
